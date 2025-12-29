@@ -4,14 +4,40 @@
     "src/renderer/src/env.d.ts",
     "src/renderer/src/**/*",
     "src/renderer/src/**/*.vue",
-    "src/preload/*.d.ts"
+    "src/renderer/src/assets/**/*",
+    "src/renderer/shell/env.d.ts",
+    "src/renderer/shell/**/*",
+    "src/renderer/shell/**/*.vue",
+    "src/renderer/shell/assets/**/*",
+    "src/renderer/floating/env.d.ts",
+    "src/renderer/floating/**/*",
+    "src/renderer/floating/**/*.vue",
+    "src/renderer/floating/assets/**/*",
+    "src/renderer/splash/**/*",
+    "src/renderer/splash/**/*.vue",
+    "src/renderer/splash/assets/**/*",
+    "src/preload/*.d.ts",
+    "src/shared/**/*",
+    "src/shadcn/**/*",
+    "src/renderer/settings/**/*",
+    "src/renderer/settings/**/*.vue"
   ],
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
+    "module": "esnext",
     "paths": {
-      "@renderer/*": [
+      "@/*": [
         "src/renderer/src/*"
+      ],
+      "@shell/*": [
+        "src/renderer/shell/*"
+      ],
+      "@shared/*": [
+        "src/shared/*"
+      ],
+      "@shadcn/*": [
+        "src/shadcn/*"
       ]
     }
   }
