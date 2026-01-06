@@ -1,0 +1,165 @@
+{
+  "input": {
+    "placeholder": "Pergunte algo? Você pode citar ferramentas, arquivos, recursos usando {'@'}...",
+    "fileArea": "Área de Arquivos",
+    "inputArea": "Área de Entrada",
+    "functionSwitch": "Alternar Função",
+    "fileSelect": "Selecionar Arquivo",
+    "pasteFiles": "Colar arquivos da área de transferência",
+    "dropFiles": "Solte os arquivos aqui",
+    "promptFilesAdded": "Arquivos de Prompt Adicionados",
+    "promptFilesAddedDesc": "{count} arquivos adicionados com sucesso",
+    "promptFilesError": "Erro no Processamento de Arquivos",
+    "promptFilesErrorDesc": "Falha ao processar {count} arquivos",
+    "historyPlaceholder": "(Pressione Tab para autocompletar)",
+    "rateLimitQueue": "Fila {count}",
+    "rateLimitWait": "Aguarde {seconds}s",
+    "rateLimitQueueTooltip": "{count} requisições na fila, intervalo de {interval}s",
+    "rateLimitReadyTooltip": "Pronto para enviar, intervalo de {interval}s",
+    "rateLimitWaitingTooltip": "Aguarde mais {seconds}s, intervalo de {interval}s",
+    "acpWorkdir": "ACP Workdir",
+    "acpWorkdirTooltip": "Set ACP working directory",
+    "acpWorkdirSelect": "Select a folder to use as the ACP workdir",
+    "acpWorkdirCurrent": "Current workdir: {path}",
+    "acpMode": "Modo",
+    "acpModeTooltip": "Modo atual: {mode}",
+    "agentWorkspaceCurrent": "Diretório de trabalho atual: {path}",
+    "agentWorkspaceSelect": "Selecione o diretório de trabalho",
+    "agentWorkspaceTooltip": "Definir diretório de trabalho do agente"
+  },
+  "features": {
+    "webSearch": "Busca na Web",
+    "thoughtForSeconds": "Pensou por {seconds}s",
+    "thoughtForSecondsLoading": "Pensando por {seconds}s...",
+    "artifactThinking": "Processando Artefato",
+    "modeChanged": "Modo alterado para: {mode}"
+  },
+  "search": {
+    "results": "Encontradas {0} páginas web",
+    "searching": "Buscando...",
+    "title": "Resultados da Busca",
+    "description": "Encontrados {0} resultados relacionados",
+    "optimizing": "Otimizando consulta de busca...",
+    "reading": "Buscando e lendo páginas web...",
+    "error": "Falha na busca"
+  },
+  "messages": {
+    "thinking": "Pensando...",
+    "rateLimitWaiting": "Limite de taxa atingido, aguardando na fila...",
+    "rateLimitTitle": "Limite de Taxa Ativo",
+    "rateLimitQueue": "Posição na Fila",
+    "rateLimitEstimated": "Tempo Estimado",
+    "rateLimitQuickSettings": "Ajustar Limite",
+    "rateLimitSwitchProvider": "Trocar Provedor",
+    "rateLimitImmediately": "Agora",
+    "rateLimitSeconds": "s",
+    "rateLimitMinutes": "m"
+  },
+  "rateLimit": {
+    "queueTooltip": "{count} requisições na fila, intervalo de {interval}s",
+    "readyTooltip": "Pronto para enviar, intervalo de {interval}s",
+    "waitingTooltip": "Aguarde mais {seconds}s, intervalo de {interval}s"
+  },
+  "notify": {
+    "generationComplete": "Geração concluída",
+    "generationError": "Falha na geração"
+  },
+  "navigation": {
+    "title": "Navegação de Mensagens",
+    "searchPlaceholder": "Buscar mensagens...",
+    "noResults": "Nenhuma mensagem encontrada",
+    "noMessages": "Nenhuma mensagem ainda",
+    "totalMessages": "Total de {count} mensagens",
+    "searchResults": "Encontrados {count} resultados em {total} mensagens",
+    "userMessage": "Mensagem do usuário",
+    "assistantMessage": "Resposta do assistente",
+    "unknownMessage": "Mensagem desconhecida"
+  },
+  "toolCall": {
+    "title": "Chamada de ferramenta",
+    "calling": "Chamada de ferramenta em andamento",
+    "response": "Resposta da ferramenta",
+    "end": "Chamada de ferramenta concluída",
+    "error": "Erro na chamada de ferramenta",
+    "clickToView": "Clique para ver detalhes",
+    "functionName": "Nome da função",
+    "params": "Parâmetros",
+    "responseData": "Dados de resposta"
+  },
+  "mcpUi": {
+    "badge": "IU",
+    "collapse": "fechar",
+    "expand": "Expandir",
+    "title": "MCP UI"
+  },
+  "acp": {
+    "workspace": {
+      "title": "Área de trabalho",
+      "collapse": "Recolher",
+      "plan": {
+        "section": "Plano",
+        "empty": "Nenhuma tarefa ainda",
+        "status": {
+          "pending": "Pendente",
+          "in_progress": "Em andamento",
+          "completed": "Concluído",
+          "failed": "Falhou",
+          "skipped": "Ignorado"
+        }
+      },
+      "files": {
+        "section": "Arquivos",
+        "empty": "Nenhum arquivo",
+        "loading": "Carregando arquivos...",
+        "contextMenu": {
+          "insertPath": "Insira na caixa de entrada",
+          "openFile": "abrir arquivo",
+          "revealInFolder": "Abrir no gerenciador de arquivos"
+        }
+      },
+      "terminal": {
+        "section": "Terminal",
+        "empty": "Nenhuma saída"
+      }
+    }
+  },
+  "mode": {
+    "acpAgent": "Agente ACP",
+    "agent": "Agente",
+    "chat": "bater papo",
+    "current": "Modo atual: {mode}"
+  },
+  "workspace": {
+    "collapse": "fechar",
+    "files": {
+      "contextMenu": {
+        "insertPath": "Insira na caixa de entrada",
+        "openFile": "abrir arquivo",
+        "revealInFolder": "Abrir no gerenciador de arquivos"
+      },
+      "empty": "Nenhum arquivo ainda",
+      "loading": "Carregando arquivos...",
+      "section": "documento"
+    },
+    "browser": {
+      "section": "Navegador",
+      "empty": "Nenhuma guia"
+    },
+    "plan": {
+      "empty": "Nenhuma tarefa ainda",
+      "section": "plano",
+      "status": {
+        "completed": "Concluído",
+        "failed": "falhar",
+        "in_progress": "em andamento",
+        "pending": "Pendente",
+        "skipped": "ignorado"
+      }
+    },
+    "terminal": {
+      "empty": "Nenhuma saída ainda",
+      "section": "terminal"
+    },
+    "title": "área de trabalho"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "emojiPicker": {
+    "search": "Rechercher un emoji",
+    "smileys": "Émoticônes & Émotions",
+    "people": "Personnes & Corps",
+    "animals": "Animaux & Nature",
+    "food": "Nourriture & Boissons",
+    "travel": "Voyages & Lieux",
+    "activities": "Activités",
+    "objects": "Objets",
+    "symbols": "Symboles",
+    "flags": "Drapeaux"
+  },
+  "messageBlockAction": {
+    "continue": "Continuer",
+    "continued": "Poursuivi"
+  },
+  "messageBlockPermissionRequest": {
+    "title": "Autorisation requise",
+    "allow": "Autoriser",
+    "deny": "Refuser",
+    "rememberChoice": "Se souvenir de ce choix",
+    "granted": "Autorisation accordée",
+    "denied": "Autorisation refusée",
+    "type": {
+      "read": "Accès en lecture",
+      "write": "Accès en écriture",
+      "all": "Accès complet"
+    },
+    "description": {
+      "read": "Autoriser '{toolName}' de '{serverName}' à effectuer des opérations de lecture ?",
+      "write": "Autoriser '{toolName}' de '{serverName}' à effectuer des opérations d'écriture ?",
+      "all": "Autoriser '{toolName}' de '{serverName}' à lire et écrire ?"
+    }
+  },
+  "promptParamsDialog": {
+    "title": "Paramètres pour {name}",
+    "description": "Veuillez remplir les paramètres ci-dessous. Les champs marqués d'un * sont obligatoires.",
+    "required": "Ce champ est obligatoire."
+  }
+}

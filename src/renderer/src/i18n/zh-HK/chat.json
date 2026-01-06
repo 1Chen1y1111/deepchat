@@ -1,0 +1,165 @@
+{
+  "input": {
+    "placeholder": "問點什麼？可以通過{'@'}來引用工具、文件、資源...",
+    "fileArea": "文件區域",
+    "inputArea": "輸入區域",
+    "functionSwitch": "功能開關",
+    "fileSelect": "選擇文件",
+    "pasteFiles": "支持複製粘貼文件",
+    "dropFiles": "拖拽文件到此處",
+    "promptFilesAdded": "Prompt 文件已添加",
+    "promptFilesAddedDesc": "已成功添加 {count} 個文件",
+    "promptFilesError": "文件處理錯誤",
+    "promptFilesErrorDesc": "{count} 個文件處理失敗",
+    "historyPlaceholder": "(按 Tab 填充)",
+    "rateLimitQueue": "佇列 {count}",
+    "rateLimitWait": "等待 {seconds}秒",
+    "rateLimitQueueTooltip": "佇列中有 {count} 個請求，間隔 {interval} 秒",
+    "rateLimitReadyTooltip": "可以發送請求，間隔 {interval} 秒",
+    "rateLimitWaitingTooltip": "還需等待 {seconds} 秒，間隔 {interval} 秒",
+    "acpWorkdir": "工作目錄",
+    "acpWorkdirTooltip": "設定 ACP 工作目錄",
+    "acpWorkdirSelect": "選擇工作目錄",
+    "acpWorkdirCurrent": "目前工作目錄：{path}",
+    "acpMode": "模式",
+    "acpModeTooltip": "目前模式：{mode}",
+    "agentWorkspaceCurrent": "當前工作目錄：{path}",
+    "agentWorkspaceSelect": "選擇工作目錄",
+    "agentWorkspaceTooltip": "設置 Agent 工作目錄"
+  },
+  "features": {
+    "webSearch": "網絡搜索",
+    "artifactThinking": "artifact 思考",
+    "thoughtForSeconds": "思考了 {seconds} 秒",
+    "thoughtForSecondsLoading": "正在思考（第 {seconds} 秒）",
+    "modeChanged": "模式已切換至：{mode}"
+  },
+  "search": {
+    "results": "已搜索到{0}個網頁",
+    "searching": "搜索中...",
+    "title": "搜索結果",
+    "description": "共找到 {0} 條相關結果",
+    "optimizing": "正在提取搜索意...",
+    "reading": "正在搜索并阅读网页...",
+    "error": "搜索失败"
+  },
+  "messages": {
+    "thinking": "正在思考...",
+    "rateLimitWaiting": "速率限制，正在佇列等待...",
+    "rateLimitTitle": "請求速率限制",
+    "rateLimitQueue": "佇列位置",
+    "rateLimitEstimated": "預估等待時間",
+    "rateLimitQuickSettings": "調整限制",
+    "rateLimitSwitchProvider": "切換服務商",
+    "rateLimitImmediately": "立即",
+    "rateLimitSeconds": "秒",
+    "rateLimitMinutes": "分鐘"
+  },
+  "rateLimit": {
+    "queueTooltip": "佇列中有 {count} 個請求，間隔 {interval} 秒",
+    "readyTooltip": "可以發送請求，間隔 {interval} 秒",
+    "waitingTooltip": "還需等待 {seconds} 秒，間隔 {interval} 秒"
+  },
+  "notify": {
+    "generationComplete": "生成完畢",
+    "generationError": "生成失敗"
+  },
+  "navigation": {
+    "title": "訊息導航",
+    "searchPlaceholder": "搜索訊息...",
+    "noResults": "冇搵到相符嘅訊息",
+    "noMessages": "暫時冇訊息",
+    "totalMessages": "共 {count} 條訊息",
+    "searchResults": "搵到 {count} 條結果，共 {total} 條訊息",
+    "userMessage": "用戶訊息",
+    "assistantMessage": "助手回覆",
+    "unknownMessage": "未知訊息"
+  },
+  "toolCall": {
+    "title": "工具呼叫",
+    "calling": "工具呼叫緊",
+    "response": "工具回應",
+    "end": "工具呼叫完成",
+    "error": "工具呼叫錯誤",
+    "clickToView": "點擊查看詳情",
+    "functionName": "函數名稱",
+    "params": "參數",
+    "responseData": "回應數據"
+  },
+  "mcpUi": {
+    "badge": "UI",
+    "collapse": "收起",
+    "expand": "展開",
+    "title": "MCP UI"
+  },
+  "acp": {
+    "workspace": {
+      "title": "工作區",
+      "collapse": "收起",
+      "plan": {
+        "section": "計劃",
+        "empty": "暫無任務",
+        "status": {
+          "pending": "待處理",
+          "in_progress": "進行中",
+          "completed": "已完成",
+          "failed": "失敗",
+          "skipped": "已跳過"
+        }
+      },
+      "files": {
+        "section": "檔案",
+        "empty": "暫無檔案",
+        "loading": "載入檔案中...",
+        "contextMenu": {
+          "openFile": "開啟檔案",
+          "revealInFolder": "在檔案管理器中開啟",
+          "insertPath": "插入到輸入框"
+        }
+      },
+      "terminal": {
+        "section": "終端",
+        "empty": "暫無輸出"
+      }
+    }
+  },
+  "mode": {
+    "acpAgent": "ACP Agent",
+    "agent": "Agent",
+    "chat": "聊天",
+    "current": "當前模式：{mode}"
+  },
+  "workspace": {
+    "collapse": "收起",
+    "files": {
+      "contextMenu": {
+        "insertPath": "插入到輸入框",
+        "openFile": "打開文件",
+        "revealInFolder": "在文件管理器中打開"
+      },
+      "empty": "暫無文件",
+      "loading": "加載文件中...",
+      "section": "文件"
+    },
+    "browser": {
+      "section": "瀏覽器",
+      "empty": "暫無分頁"
+    },
+    "plan": {
+      "empty": "暫無任務",
+      "section": "計劃",
+      "status": {
+        "completed": "已完成",
+        "failed": "失敗",
+        "in_progress": "進行中",
+        "pending": "待處理",
+        "skipped": "已跳過"
+      }
+    },
+    "terminal": {
+      "empty": "暫無輸出",
+      "section": "終端"
+    },
+    "title": "工作區"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "emojiPicker": {
+    "search": "جستجوی شکلک",
+    "smileys": "لبخندها و احساسات",
+    "people": "مردم و بدن",
+    "animals": "حیوانات و طبیعت",
+    "food": "غذا و نوشیدنی",
+    "travel": "سفر و مکان‌ها",
+    "activities": "کنش‌ها",
+    "objects": "اشیاء",
+    "symbols": "نمادها",
+    "flags": "پرچم‌ها"
+  },
+  "messageBlockAction": {
+    "continue": "ادامه",
+    "continued": "ادامه شد"
+  },
+  "messageBlockPermissionRequest": {
+    "title": "مجوز مورد نیاز",
+    "allow": "اجازه دادن",
+    "deny": "رد کردن",
+    "rememberChoice": "این انتخاب را به خاطر بسپار",
+    "granted": "مجوز داده شد",
+    "denied": "مجوز رد شد",
+    "type": {
+      "read": "دسترسی خواندن",
+      "write": "دسترسی نوشتن",
+      "all": "دسترسی کامل"
+    },
+    "description": {
+      "read": "به '{toolName}' از '{serverName}' اجازه می‌دهید عملیات خواندن انجام دهد؟",
+      "write": "به '{toolName}' از '{serverName}' اجازه می‌دهید عملیات نوشتن انجام دهد؟",
+      "all": "به '{toolName}' از '{serverName}' اجازه می‌دهید بخواند و بنویسد؟"
+    }
+  },
+  "promptParamsDialog": {
+    "title": "{name} Parameter Settings",
+    "description": "Please fill in the parameters below. Fields marked * are required.",
+    "required": "This field is required."
+  }
+}

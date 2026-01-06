@@ -1,0 +1,165 @@
+{
+  "input": {
+    "placeholder": "何か質問は？{'@'}でツール、ファイル、リソースを引用できます...",
+    "fileArea": "ファイルエリア",
+    "inputArea": "入力エリア",
+    "functionSwitch": "機能スイッチ",
+    "fileSelect": "ファイルを選択",
+    "pasteFiles": "クリップボードから貼り付けに対応",
+    "dropFiles": "ファイルをここにドラッグ",
+    "promptFilesAdded": "プロンプトファイルが追加されました",
+    "promptFilesAddedDesc": "{count}個のファイルが正常に追加されました",
+    "promptFilesError": "ファイル処理エラー",
+    "promptFilesErrorDesc": "{count}個のファイルの処理に失敗しました",
+    "historyPlaceholder": "（Tabで補完）",
+    "rateLimitQueue": "キュー {count}",
+    "rateLimitWait": "待機 {seconds}秒",
+    "rateLimitQueueTooltip": "キューに{count}個のリクエスト、間隔{interval}秒",
+    "rateLimitReadyTooltip": "送信準備完了、間隔{interval}秒",
+    "rateLimitWaitingTooltip": "あと{seconds}秒待機、間隔{interval}秒",
+    "acpWorkdir": "ACP Workdir",
+    "acpWorkdirTooltip": "Set ACP working directory",
+    "acpWorkdirSelect": "Select a folder to use as the ACP workdir",
+    "acpWorkdirCurrent": "Current workdir: {path}",
+    "acpMode": "モード",
+    "acpModeTooltip": "現在のモード：{mode}",
+    "agentWorkspaceCurrent": "現在の作業ディレクトリ: {パス}",
+    "agentWorkspaceSelect": "作業ディレクトリを選択",
+    "agentWorkspaceTooltip": "エージェントの作業ディレクトリを設定する"
+  },
+  "features": {
+    "webSearch": "ウェブ検索",
+    "artifactThinking": "アーティファクト思考",
+    "thoughtForSeconds": "{seconds}秒間思考しました",
+    "thoughtForSecondsLoading": "{seconds}秒間思考中...",
+    "modeChanged": "モードが次のように切り替わりました: {mode}"
+  },
+  "search": {
+    "results": "{0}件のウェブページが見つかりました",
+    "searching": "検索中...",
+    "title": "検索結果",
+    "description": "{0}件の関連結果が見つかりました",
+    "optimizing": "検索意図の抽出中...",
+    "reading": "ウェブページを読み込み中...",
+    "error": "検索に失敗しました"
+  },
+  "messages": {
+    "thinking": "思考中...",
+    "rateLimitWaiting": "レート制限により、キューで待機中...",
+    "rateLimitTitle": "リクエストレート制限",
+    "rateLimitQueue": "キューの位置",
+    "rateLimitEstimated": "推定待機時間",
+    "rateLimitQuickSettings": "制限を調整",
+    "rateLimitSwitchProvider": "プロバイダーを切り替え",
+    "rateLimitImmediately": "すぐに",
+    "rateLimitSeconds": "秒",
+    "rateLimitMinutes": "分"
+  },
+  "rateLimit": {
+    "queueTooltip": "キューに{count}個のリクエスト、間隔{interval}秒",
+    "readyTooltip": "送信準備完了、間隔{interval}秒",
+    "waitingTooltip": "あと{seconds}秒待機、間隔{interval}秒"
+  },
+  "notify": {
+    "generationComplete": "生成完了",
+    "generationError": "生成失敗"
+  },
+  "navigation": {
+    "title": "メッセージナビゲーション",
+    "searchPlaceholder": "メッセージを検索...",
+    "noResults": "一致するメッセージが見つかりません",
+    "noMessages": "まだメッセージはありません",
+    "totalMessages": "合計 {count} 件のメッセージ",
+    "searchResults": "{total} 件中 {count} 件の結果を表示",
+    "userMessage": "ユーザーメッセージ",
+    "assistantMessage": "アシスタントの返信",
+    "unknownMessage": "不明なメッセージ"
+  },
+  "toolCall": {
+    "title": "ツール呼び出し",
+    "calling": "ツール呼び出し中",
+    "response": "ツール応答",
+    "end": "ツール呼び出し完了",
+    "error": "ツール呼び出しエラー",
+    "clickToView": "詳細を表示",
+    "functionName": "関数名",
+    "params": "パラメータ",
+    "responseData": "レスポンスデータ"
+  },
+  "mcpUi": {
+    "badge": "UI",
+    "collapse": "折りたたむ",
+    "expand": "展開",
+    "title": "MCP UI"
+  },
+  "acp": {
+    "workspace": {
+      "title": "ワークスペース",
+      "collapse": "折りたたむ",
+      "plan": {
+        "section": "プラン",
+        "empty": "タスクはまだありません",
+        "status": {
+          "pending": "保留中",
+          "in_progress": "進行中",
+          "completed": "完了",
+          "failed": "失敗",
+          "skipped": "スキップ"
+        }
+      },
+      "files": {
+        "section": "ファイル",
+        "empty": "ファイルはまだありません",
+        "loading": "ファイルを読み込み中...",
+        "contextMenu": {
+          "insertPath": "入力ボックスに挿入",
+          "openFile": "ファイルを開く",
+          "revealInFolder": "ファイルマネージャーで開く"
+        }
+      },
+      "terminal": {
+        "section": "ターミナル",
+        "empty": "出力はまだありません"
+      }
+    }
+  },
+  "mode": {
+    "acpAgent": "ACPエージェント",
+    "agent": "エージェント",
+    "chat": "チャット",
+    "current": "現在のモード: {モード}"
+  },
+  "workspace": {
+    "collapse": "近い",
+    "files": {
+      "contextMenu": {
+        "insertPath": "入力ボックスに挿入",
+        "openFile": "ファイルを開く",
+        "revealInFolder": "ファイルマネージャーで開く"
+      },
+      "empty": "まだファイルがありません",
+      "loading": "ファイルをロード中...",
+      "section": "書類"
+    },
+    "browser": {
+      "section": "ブラウザ",
+      "empty": "タブがありません"
+    },
+    "plan": {
+      "empty": "まだタスクはありません",
+      "section": "プラン",
+      "status": {
+        "completed": "完了しました",
+        "failed": "失敗",
+        "in_progress": "進行中",
+        "pending": "保留中",
+        "skipped": "スキップしました"
+      }
+    },
+    "terminal": {
+      "empty": "まだ出力はありません",
+      "section": "ターミナル"
+    },
+    "title": "ワークスペース"
+  }
+}

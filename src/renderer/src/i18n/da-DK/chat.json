@@ -1,0 +1,165 @@
+{
+  "features": {
+    "artifactThinking": "artifact tænkning",
+    "thoughtForSeconds": "Tænkte i {seconds} sekunder",
+    "thoughtForSecondsLoading": "Tænker (sekund {seconds})",
+    "webSearch": "Netværkssøgning",
+    "modeChanged": "Tilstand skiftet til: {mode}"
+  },
+  "input": {
+    "acpWorkdir": "arbejdskatalog",
+    "acpWorkdirCurrent": "Nuværende arbejdsmappe: {path}",
+    "acpWorkdirSelect": "Vælg arbejdsmappe",
+    "acpWorkdirTooltip": "Indstil ACP arbejdsmappe",
+    "acpMode": "Tilstand",
+    "acpModeTooltip": "Aktuel tilstand: {mode}",
+    "dropFiles": "Træk filer hertil",
+    "fileSelect": "Vælg fil",
+    "functionSwitch": "Funktionsafbryder",
+    "historyPlaceholder": "(Udfyld med Tab)",
+    "inputArea": "Indtastningsområde",
+    "pasteFiles": "Understøtter kopiering og indsættelse af filer",
+    "placeholder": "Spørg om noget? Du kan referere til værktøjer, filer, ressourcer osv. ved at bruge {'@'}.",
+    "promptFilesAdded": "Prompt-filen er blevet tilføjet",
+    "promptFilesAddedDesc": "{count} filer er blevet tilføjet successfully",
+    "promptFilesError": "Filbehandlingsfejl",
+    "promptFilesErrorDesc": "{count} filer kunne ikke behandles",
+    "rateLimitQueue": "Kø {count}",
+    "rateLimitQueueTooltip": "Der er {count} anmodninger i køen, med et interval på {interval} sekunder.",
+    "rateLimitReadyTooltip": "Du kan sende en anmodning med et interval på {interval} sekunder.",
+    "rateLimitWait": "Vent {seconds}s",
+    "rateLimitWaitingTooltip": "Vent {seconds} sekunder, interval {interval} sekunder",
+    "fileArea": "fil område",
+    "agentWorkspaceCurrent": "Nuværende arbejdsmappe: {path}",
+    "agentWorkspaceSelect": "Vælg arbejdsmappe",
+    "agentWorkspaceTooltip": "Indstil agentens arbejdsmappe"
+  },
+  "mcpUi": {
+    "badge": "UI",
+    "collapse": "Skjul",
+    "expand": "udvide",
+    "title": "MCP-brugergrænseflade"
+  },
+  "messages": {
+    "rateLimitEstimated": "Forventet ventetid",
+    "rateLimitImmediately": "med det samme",
+    "rateLimitMinutes": "minut",
+    "rateLimitQueue": "Køposition",
+    "rateLimitQuickSettings": "Juster begrænsninger",
+    "rateLimitSeconds": "sekund",
+    "rateLimitSwitchProvider": "Skift tjenesteudbyder",
+    "rateLimitTitle": "Anmodningsfrekvensbegrænsning",
+    "rateLimitWaiting": "Anmodningsfrekvensbegrænsning, venter i kø...",
+    "thinking": "Tænker..."
+  },
+  "navigation": {
+    "assistantMessage": "Assistentens svar",
+    "noMessages": "Ingen nyheder endnu",
+    "noResults": "Ingen matchende besked fundet",
+    "searchPlaceholder": "Søg beskeder...",
+    "searchResults": "Fundet {count} resultater, i alt {total} beskeder",
+    "title": "Beskednavigation",
+    "totalMessages": "I alt {count} beskeder",
+    "unknownMessage": "Ukendt besked",
+    "userMessage": "Brugermeddelelse"
+  },
+  "notify": {
+    "generationComplete": "Generering fuldført",
+    "generationError": "Generering mislykkedes"
+  },
+  "rateLimit": {
+    "queueTooltip": "Der er {count} anmodninger i køen, med et interval på {interval} sekunder.",
+    "readyTooltip": "Du kan sende en anmodning med et interval på {interval} sekunder.",
+    "waitingTooltip": "Vent {seconds} sekunder, interval {interval} sekunder"
+  },
+  "search": {
+    "description": "Der blev fundet {0} relaterede resultater.",
+    "error": "Søgning mislykkedes",
+    "optimizing": "Udtrækker søgeintention...",
+    "reading": "Søger og læser websider...",
+    "results": "{0} websider fundet",
+    "searching": "Søger...",
+    "title": "Søgeresultater"
+  },
+  "toolCall": {
+    "calling": "Værktøj i brug",
+    "clickToView": "Klik for at se detaljer",
+    "end": "Værktøjsopkald fuldført",
+    "error": "Fejl ved kald af værktøj",
+    "functionName": "Funktionsnavn",
+    "params": "parameter",
+    "response": "Værktøjsrespons",
+    "responseData": "Svardata",
+    "title": "Værktøjsopkald"
+  },
+  "acp": {
+    "workspace": {
+      "title": "Arbejdsområde",
+      "collapse": "Skjul",
+      "plan": {
+        "section": "Plan",
+        "empty": "Ingen opgaver endnu",
+        "status": {
+          "pending": "Afventer",
+          "in_progress": "I gang",
+          "completed": "Fuldført",
+          "failed": "Fejlet",
+          "skipped": "Sprunget over"
+        }
+      },
+      "files": {
+        "section": "Filer",
+        "empty": "Ingen filer",
+        "loading": "Indlæser filer...",
+        "contextMenu": {
+          "insertPath": "Indsæt i inputboksen",
+          "openFile": "åbne fil",
+          "revealInFolder": "Åbn i filhåndtering"
+        }
+      },
+      "terminal": {
+        "section": "Terminal",
+        "empty": "Ingen output"
+      }
+    }
+  },
+  "mode": {
+    "acpAgent": "ACP-agent",
+    "agent": "Agent",
+    "chat": "snak",
+    "current": "Aktuel tilstand: {mode}"
+  },
+  "workspace": {
+    "collapse": "tæt",
+    "files": {
+      "contextMenu": {
+        "insertPath": "Indsæt i inputboksen",
+        "openFile": "åbne fil",
+        "revealInFolder": "Åbn i filhåndtering"
+      },
+      "empty": "Ingen filer endnu",
+      "loading": "Indlæser filer...",
+      "section": "dokument"
+    },
+    "browser": {
+      "section": "Browser",
+      "empty": "Ingen faner"
+    },
+    "plan": {
+      "empty": "Ingen opgaver endnu",
+      "section": "plan",
+      "status": {
+        "completed": "Afsluttet",
+        "failed": "svigte",
+        "in_progress": "i gang",
+        "pending": "Indtil",
+        "skipped": "sprunget over"
+      }
+    },
+    "terminal": {
+      "empty": "Ingen output endnu",
+      "section": "terminal"
+    },
+    "title": "arbejdsrum"
+  }
+}

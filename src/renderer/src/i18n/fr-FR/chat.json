@@ -1,0 +1,165 @@
+{
+  "input": {
+    "placeholder": "Posez une question ? Vous pouvez citer des outils, des fichiers, des ressources via {'@'}...",
+    "fileArea": "Zone de fichiers",
+    "inputArea": "Zone de saisie",
+    "functionSwitch": "Commutateur de fonction",
+    "fileSelect": "Sélectionner un fichier",
+    "pasteFiles": "Coller des fichiers depuis le presse-papiers",
+    "dropFiles": "Déposez les fichiers ici",
+    "promptFilesAdded": "Fichiers de prompt ajoutés",
+    "promptFilesAddedDesc": "{count} fichiers ajoutés avec succès",
+    "promptFilesError": "Erreur de traitement des fichiers",
+    "promptFilesErrorDesc": "Échec du traitement de {count} fichiers",
+    "historyPlaceholder": "(Appuyez sur Tab pour compléter)",
+    "rateLimitQueue": "File {count}",
+    "rateLimitWait": "Attendre {seconds}s",
+    "rateLimitQueueTooltip": "{count} requêtes en file, intervalle {interval} secondes",
+    "rateLimitReadyTooltip": "Prêt à envoyer, intervalle {interval} secondes",
+    "rateLimitWaitingTooltip": "Attendre encore {seconds} secondes, intervalle {interval} secondes",
+    "acpWorkdir": "ACP Workdir",
+    "acpWorkdirTooltip": "Set ACP working directory",
+    "acpWorkdirSelect": "Select a folder to use as the ACP workdir",
+    "acpWorkdirCurrent": "Current workdir: {path}",
+    "acpMode": "Mode",
+    "acpModeTooltip": "Mode actuel : {mode}",
+    "agentWorkspaceCurrent": "Répertoire de travail actuel : {path}",
+    "agentWorkspaceSelect": "Sélectionnez le répertoire de travail",
+    "agentWorkspaceTooltip": "Définir le répertoire de travail de l'agent"
+  },
+  "features": {
+    "webSearch": "Recherche web",
+    "artifactThinking": "Réflexion sur les artefacts",
+    "thoughtForSeconds": "Réflexion pendant {seconds}s",
+    "thoughtForSecondsLoading": "Réflexion en cours ({seconds}s)",
+    "modeChanged": "Mode commuté sur : {mode}"
+  },
+  "search": {
+    "results": "{0} pages web trouvées",
+    "searching": "Recherche en cours...",
+    "title": "Résultats de recherche",
+    "description": "{0} résultats connexes trouvés",
+    "optimizing": "Optimisation de la requête de recherche...",
+    "reading": "Recherche et lecture des pages web...",
+    "error": "La recherche a échoué"
+  },
+  "messages": {
+    "thinking": "Pensée...",
+    "rateLimitWaiting": "Limitation de débit, en attente dans la file...",
+    "rateLimitTitle": "Limitation de débit des requêtes",
+    "rateLimitQueue": "Position dans la file",
+    "rateLimitEstimated": "Temps d'attente estimé",
+    "rateLimitQuickSettings": "Ajuster la limite",
+    "rateLimitSwitchProvider": "Changer de fournisseur",
+    "rateLimitImmediately": "Immédiatement",
+    "rateLimitSeconds": "secondes",
+    "rateLimitMinutes": "minutes"
+  },
+  "rateLimit": {
+    "queueTooltip": "{count} requêtes en file, intervalle {interval} secondes",
+    "readyTooltip": "Prêt à envoyer, intervalle {interval} secondes",
+    "waitingTooltip": "Attendre encore {seconds} secondes, intervalle {interval} secondes"
+  },
+  "notify": {
+    "generationComplete": "La génération est complète",
+    "generationError": "Échec de la génération"
+  },
+  "navigation": {
+    "title": "Navigation des messages",
+    "searchPlaceholder": "Rechercher des messages...",
+    "noResults": "Aucun message correspondant trouvé",
+    "noMessages": "Aucun message pour le moment",
+    "totalMessages": "{count} messages au total",
+    "searchResults": "{count} résultats trouvés sur {total} messages",
+    "userMessage": "Message utilisateur",
+    "assistantMessage": "Réponse de l'assistant",
+    "unknownMessage": "Message inconnu"
+  },
+  "toolCall": {
+    "title": "Appel d'outil",
+    "calling": "Appel d'outil en cours",
+    "response": "Réponse de l'outil",
+    "end": "Appel d'outil terminé",
+    "error": "Erreur d'appel d'outil",
+    "clickToView": "Cliquer pour voir les détails",
+    "functionName": "Nom de la fonction",
+    "params": "Paramètres",
+    "responseData": "Données de réponse"
+  },
+  "mcpUi": {
+    "badge": "Interface utilisateur",
+    "collapse": "fermer",
+    "expand": "Développer",
+    "title": "MCP UI"
+  },
+  "acp": {
+    "workspace": {
+      "title": "Espace de travail",
+      "collapse": "Réduire",
+      "plan": {
+        "section": "Plan",
+        "empty": "Aucune tâche pour le moment",
+        "status": {
+          "pending": "En attente",
+          "in_progress": "En cours",
+          "completed": "Terminé",
+          "failed": "Échoué",
+          "skipped": "Ignoré"
+        }
+      },
+      "files": {
+        "section": "Fichiers",
+        "empty": "Aucun fichier",
+        "loading": "Chargement des fichiers...",
+        "contextMenu": {
+          "insertPath": "Insérer dans la zone de saisie",
+          "openFile": "ouvrir le fichier",
+          "revealInFolder": "Ouvrir dans le gestionnaire de fichiers"
+        }
+      },
+      "terminal": {
+        "section": "Terminal",
+        "empty": "Aucune sortie"
+      }
+    }
+  },
+  "mode": {
+    "acpAgent": "Agent ACP",
+    "agent": "Agent",
+    "chat": "chat",
+    "current": "Mode actuel : {mode}"
+  },
+  "workspace": {
+    "collapse": "fermer",
+    "files": {
+      "contextMenu": {
+        "insertPath": "Insérer dans la zone de saisie",
+        "openFile": "ouvrir le fichier",
+        "revealInFolder": "Ouvrir dans le gestionnaire de fichiers"
+      },
+      "empty": "Aucun fichier pour l'instant",
+      "loading": "Chargement des fichiers...",
+      "section": "document"
+    },
+    "browser": {
+      "section": "Navigateur",
+      "empty": "Aucun onglet"
+    },
+    "plan": {
+      "empty": "Aucune tâche pour l'instant",
+      "section": "plan",
+      "status": {
+        "completed": "Complété",
+        "failed": "échouer",
+        "in_progress": "en cours",
+        "pending": "En attente",
+        "skipped": "ignoré"
+      }
+    },
+    "terminal": {
+      "empty": "Pas encore de sortie",
+      "section": "Terminal"
+    },
+    "title": "espace de travail"
+  }
+}

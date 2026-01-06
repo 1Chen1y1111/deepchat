@@ -15,5 +15,8 @@
     "test/**",
     "src/shared/**",
     "src/shadcn/**"
-  ]
+  ],
+  "rules": {
+    "sort-imports": "error"
+  }
 }

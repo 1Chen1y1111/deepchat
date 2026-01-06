@@ -1,0 +1,165 @@
+{
+  "input": {
+    "placeholder": "Ask something? You can quote tools, files, resources via {'@'}...",
+    "fileArea": "File Area",
+    "inputArea": "Input Area",
+    "functionSwitch": "Function Switch",
+    "fileSelect": "Select File",
+    "pasteFiles": "Paste files from clipboard",
+    "dropFiles": "Drop files here",
+    "promptFilesAdded": "Prompt Files Added",
+    "promptFilesAddedDesc": "Successfully added {count} files",
+    "promptFilesError": "File Processing Error",
+    "promptFilesErrorDesc": "{count} files failed to process",
+    "historyPlaceholder": "(Press Tab to autocomplete)",
+    "rateLimitQueue": "Queue {count}",
+    "rateLimitWait": "Wait {seconds}s",
+    "rateLimitQueueTooltip": "{count} requests in queue, {interval}s interval",
+    "rateLimitReadyTooltip": "Ready to send, {interval}s interval",
+    "rateLimitWaitingTooltip": "Wait {seconds}s more, {interval}s interval",
+    "acpWorkdir": "ACP Workdir",
+    "acpWorkdirTooltip": "Set ACP working directory",
+    "acpWorkdirSelect": "Select a folder to use as the ACP workdir",
+    "acpWorkdirCurrent": "Current workdir: {path}",
+    "acpMode": "Mode",
+    "acpModeTooltip": "Current mode: {mode}",
+    "agentWorkspaceTooltip": "Set Agent workspace directory",
+    "agentWorkspaceSelect": "Select a folder to use as the workspace",
+    "agentWorkspaceCurrent": "Current workspace: {path}"
+  },
+  "features": {
+    "webSearch": "Web Search",
+    "thoughtForSeconds": "Thought for {seconds}s",
+    "thoughtForSecondsLoading": "Thinking for {seconds}s...",
+    "artifactThinking": "Artifact Thinking",
+    "modeChanged": "Mode changed to: {mode}"
+  },
+  "search": {
+    "results": "Found {0} web pages",
+    "searching": "Searching...",
+    "title": "Search Results",
+    "description": "Found {0} related results",
+    "optimizing": "Optimizing search query...",
+    "reading": "Searching and reading web pages...",
+    "error": "Search failed"
+  },
+  "messages": {
+    "thinking": "Thinking...",
+    "rateLimitWaiting": "Rate limit reached, waiting in queue...",
+    "rateLimitTitle": "Rate Limit Active",
+    "rateLimitQueue": "Queue Position",
+    "rateLimitEstimated": "Estimated Wait",
+    "rateLimitQuickSettings": "Adjust Limit",
+    "rateLimitSwitchProvider": "Switch Provider",
+    "rateLimitImmediately": "Now",
+    "rateLimitSeconds": "s",
+    "rateLimitMinutes": "m"
+  },
+  "rateLimit": {
+    "queueTooltip": "{count} requests in queue, {interval}s interval",
+    "readyTooltip": "Ready to send, {interval}s interval",
+    "waitingTooltip": "Wait {seconds}s more, {interval}s interval"
+  },
+  "notify": {
+    "generationComplete": "Generation is complete",
+    "generationError": "Generation failed"
+  },
+  "navigation": {
+    "title": "Message Navigation",
+    "searchPlaceholder": "Search messages...",
+    "noResults": "No matching messages found",
+    "noMessages": "No messages yet",
+    "totalMessages": "{count} messages total",
+    "searchResults": "Found {count} results in {total} messages",
+    "userMessage": "User message",
+    "assistantMessage": "Assistant reply",
+    "unknownMessage": "Unknown message"
+  },
+  "mcpUi": {
+    "title": "MCP UI",
+    "badge": "UI",
+    "expand": "Expand",
+    "collapse": "Collapse"
+  },
+  "toolCall": {
+    "title": "Tool Call",
+    "calling": "Tool call in progress",
+    "response": "Tool response",
+    "end": "Tool call finished",
+    "error": "Tool call error",
+    "clickToView": "Click to view details",
+    "functionName": "Function",
+    "params": "Parameters",
+    "responseData": "Response data"
+  },
+  "mode": {
+    "current": "Current mode: {mode}",
+    "chat": "Chat",
+    "agent": "Agent",
+    "acpAgent": "ACP Agent"
+  },
+  "workspace": {
+    "title": "Workspace",
+    "collapse": "Collapse",
+    "plan": {
+      "section": "Plan",
+      "empty": "No tasks yet",
+      "status": {
+        "pending": "Pending",
+        "in_progress": "In Progress",
+        "completed": "Completed",
+        "failed": "Failed",
+        "skipped": "Skipped"
+      }
+    },
+    "files": {
+      "section": "Files",
+      "empty": "No files",
+      "loading": "Loading files...",
+      "contextMenu": {
+        "openFile": "Open file",
+        "revealInFolder": "Show in file manager",
+        "insertPath": "Insert into input"
+      }
+    },
+    "browser": {
+      "section": "Browser",
+      "empty": "No tabs yet"
+    },
+    "terminal": {
+      "section": "Terminal",
+      "empty": "No output yet"
+    }
+  },
+  "acp": {
+    "workspace": {
+      "title": "Workspace",
+      "collapse": "Collapse",
+      "plan": {
+        "section": "Plan",
+        "empty": "No tasks yet",
+        "status": {
+          "pending": "Pending",
+          "in_progress": "In Progress",
+          "completed": "Completed",
+          "failed": "Failed",
+          "skipped": "Skipped"
+        }
+      },
+      "files": {
+        "section": "Files",
+        "empty": "No files",
+        "loading": "Loading files...",
+        "contextMenu": {
+          "openFile": "Open file",
+          "revealInFolder": "Show in file manager",
+          "insertPath": "Insert into input"
+        }
+      },
+      "terminal": {
+        "section": "Terminal",
+        "empty": "No output yet"
+      }
+    }
+  }
+}

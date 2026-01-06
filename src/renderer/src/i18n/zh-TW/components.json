@@ -1,0 +1,41 @@
+{
+  "emojiPicker": {
+    "search": "搜尋表情符號",
+    "smileys": "笑臉與情緒",
+    "people": "人與身體",
+    "animals": "動物與自然",
+    "food": "食物與飲料",
+    "travel": "旅行與地點",
+    "activities": "活動",
+    "objects": "物品",
+    "symbols": "符號",
+    "flags": "國旗"
+  },
+  "messageBlockAction": {
+    "continue": "繼續",
+    "continued": "已繼續"
+  },
+  "messageBlockPermissionRequest": {
+    "title": "需要權限",
+    "allow": "允許",
+    "deny": "拒絕",
+    "rememberChoice": "記住此選擇",
+    "granted": "權限已授予",
+    "denied": "權限已拒絕",
+    "type": {
+      "read": "讀取權限",
+      "write": "寫入權限",
+      "all": "完整權限"
+    },
+    "description": {
+      "all": "允許 '{serverName}' 的 '{toolName}' 執行讀取和寫入操作？",
+      "read": "允許 '{serverName}' 的 '{toolName}' 執行讀取操作？",
+      "write": "允許 '{serverName}' 的 '{toolName}' 執行寫入操作？"
+    }
+  },
+  "promptParamsDialog": {
+    "title": "{name} 參數設定",
+    "description": "請填寫以下參數，帶 * 的為必填項。",
+    "required": "此參數為必填項"
+  }
+}

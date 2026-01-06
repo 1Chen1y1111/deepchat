@@ -1,0 +1,20 @@
+{
+  "title": "DeepChat",
+  "description": "DeepChat - это кросс-платформенный AI клиент. Мы стремимся сделать AI доступным для большего числа людей.",
+  "website": "Открыть сайт",
+  "disclaimerButton": "Отказ от ответственности",
+  "disclaimerTitle": "Условия использования",
+  "checkUpdateButton": "Проверить обновления",
+  "updateChannel": "Канал обновлений",
+  "stableChannel": "Стабильный",
+  "betaChannel": "Beta",
+  "deviceInfo": {
+    "title": "Сведения об устройстве",
+    "platform": "Платформа",
+    "arch": "Архитектура",
+    "cpuModel": "Модель процессора",
+    "totalMemory": "Общий объем памяти",
+    "osVersion": "Версия системы"
+  },
+  "feedbackButton": "Обратная связь"
+}

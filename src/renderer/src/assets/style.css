@@ -90,30 +90,30 @@
     --zinc-950: hsl(240 10% 3.9%);
 
     /* ---- Shadcn UI 语义化颜色变量 ---- */
-    --container: var(--white);           /* 容器背景色 */
-    --background: var(--white);          /* 页面背景色 */
-    --foreground: hsl(0 0 15% / 1);      /* 前景文字色 */
-    --card: hsl(0 0% 100%);              /* 卡片背景色 */
+    --container: var(--white); /* 容器背景色 */
+    --background: var(--white); /* 页面背景色 */
+    --foreground: hsl(0 0 15% / 1); /* 前景文字色 */
+    --card: hsl(0 0% 100%); /* 卡片背景色 */
     --card-foreground: hsl(0 0 15% / 1); /* 卡片文字色 */
-    --popover: hsl(0 0% 100%);           /* 弹出框背景色 */
+    --popover: hsl(0 0% 100%); /* 弹出框背景色 */
     --popover-foreground: hsl(0 0 15% / 1); /* 弹出框文字色 */
-    --primary: hsl(210 100% 43%);        /* 主要操作色 */
+    --primary: hsl(210 100% 43%); /* 主要操作色 */
     --primary-foreground: hsl(0 0% 100%); /* 主要操作上的文字色 */
-    --secondary: hsl(0 0 0% / 0.05);     /* 次要背景色 */
+    --secondary: hsl(0 0 0% / 0.05); /* 次要背景色 */
     --secondary-foreground: hsl(0 0 15% / 0.5); /* 次要背景上的文字色 */
-    --muted: hsl(0 0 0% / 0.03);         /* 静音/禁用背景色 */
+    --muted: hsl(0 0 0% / 0.03); /* 静音/禁用背景色 */
     --muted-foreground: hsl(0 0 15% / 0.5); /* 静音文字色 */
-    --accent: hsl(0 0 15% / 0.05);       /* 强调背景色 */
+    --accent: hsl(0 0 15% / 0.05); /* 强调背景色 */
     --accent-foreground: hsl(0 0 15% / 0.8); /* 强调背景上的文字色 */
-    --destructive: hsl(0 84.2% 60.2%);   /* 危险操作色 (红色) */
+    --destructive: hsl(0 84.2% 60.2%); /* 危险操作色 (红色) */
     --destructive-foreground: hsl(0 0% 98%); /* 危险操作上的文字色 */
-    --input: var(--base-300);            /* 输入框边框色 */
-    --ring: var(--primary-600);          /* 焦点环颜色 */
-    --chart-1: var(--primary-600);       /* 图表颜色 1 */
-    --chart-2: var(--primary-200);       /* 图表颜色 2 */
-    --chart-3: var(--primary-400);       /* 图表颜色 3 */
-    --chart-4: var(--primary-300);       /* 图表颜色 4 */
-    --chart-5: var(--primary-100);       /* 图表颜色 5 */
+    --input: var(--base-300); /* 输入框边框色 */
+    --ring: var(--primary-600); /* 焦点环颜色 */
+    --chart-1: var(--primary-600); /* 图表颜色 1 */
+    --chart-2: var(--primary-200); /* 图表颜色 2 */
+    --chart-3: var(--primary-400); /* 图表颜色 3 */
+    --chart-4: var(--primary-300); /* 图表颜色 4 */
+    --chart-5: var(--primary-100); /* 图表颜色 5 */
 
     /* ---- 侧边栏颜色 ---- */
     --sidebar: hsl(0 0% 100%);
@@ -140,13 +140,13 @@
     --animation-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 
     /* ---- 字重 ---- */
-    --display-weight: 700;  /* 标题字重 */
-    --text-weight: 400;     /* 正文字重 */
+    --display-weight: 700; /* 标题字重 */
+    --text-weight: 400; /* 正文字重 */
 
     /* ---- Token 使用量指示器颜色 ---- */
-    --usage-low: 142 71% 45%;   /* 低使用量 (绿色) */
-    --usage-mid: 48 96% 53%;    /* 中使用量 (黄色) */
-    --usage-high: 0 72% 51%;    /* 高使用量 (红色) */
+    --usage-low: 142 71% 45%; /* 低使用量 (绿色) */
+    --usage-mid: 48 96% 53%; /* 中使用量 (黄色) */
+    --usage-high: 0 72% 51%; /* 高使用量 (红色) */
 
     /* ---- 新主题变量 (背景色) ---- */
     --bg-accent: hsl(0 0 15% / 0.05);
@@ -188,27 +188,27 @@
    * 通过修改 --dc-font-scale 变量来调整全局字体大小
    * ------------------------------------------------------------------------ */
   html {
-    --dc-font-scale: 1;      /* 默认缩放 */
+    --dc-font-scale: 1; /* 默认缩放 */
   }
 
   html.text-sm {
-    --dc-font-scale: 0.875;  /* 小字体 */
+    --dc-font-scale: 0.875; /* 小字体 */
   }
 
   html.text-base {
-    --dc-font-scale: 1;      /* 标准字体 */
+    --dc-font-scale: 1; /* 标准字体 */
   }
 
   html.text-lg {
-    --dc-font-scale: 1.125;  /* 大字体 */
+    --dc-font-scale: 1.125; /* 大字体 */
   }
 
   html.text-xl {
-    --dc-font-scale: 1.25;   /* 超大字体 */
+    --dc-font-scale: 1.25; /* 超大字体 */
   }
 
   html.text-2xl {
-    --dc-font-scale: 1.5;    /* 特大字体 */
+    --dc-font-scale: 1.5; /* 特大字体 */
   }
 
   /* ------------------------------------------------------------------------

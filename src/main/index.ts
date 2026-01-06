@@ -1,72 +1,97 @@
-import { app, shell, BrowserWindow, ipcMain } from 'electron'
-import { join } from 'path'
-import { electronApp, optimizer, is } from '@electron-toolkit/utils'
-import icon from '../../resources/icon.png?asset'
+import { app, dialog } from 'electron'
+import { electronApp } from '@electron-toolkit/utils'
+import log from 'electron-log'
+import { SendTarget, eventBus } from './eventbus'
+import { NOTIFICATION_EVENTS, WINDOW_EVENTS } from './events'
+import { Presenter, getInstance } from './presenter'
+import { LifecycleManager } from './presenter/lifecyclePresenter'
+import { registerCoreHooks } from './presenter/lifecyclePresenter/coreHooks'
 
-function createWindow(): void {
-  // Create the browser window.
-  const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 670,
-    show: false,
-    autoHideMenuBar: true,
-    ...(process.platform === 'linux' ? { icon } : {}),
-    webPreferences: {
-      preload: join(__dirname, '../preload/index.mjs'),
-      sandbox: false
-    }
-  })
+// Handle unhandled exceptions to prevent app crash or error dialogs
+process.on('uncaughtException', (error) => {
+  log.error('Uncaught Exception:', error)
 
-  mainWindow.on('ready-to-show', () => {
-    mainWindow.show()
-  })
+  const msg = error.message || 'Unknown error'
+  const isNetworkError = [
+    'net::ERR',
+    'ECONNRESET',
+    'ETIMEDOUT',
+    'ENOTFOUND',
+    'Network Error',
+    'fetch failed'
+  ].some((k) => msg.includes(k))
 
-  mainWindow.webContents.setWindowOpenHandler((details) => {
-    shell.openExternal(details.url)
-    return { action: 'deny' }
-  })
-
-  // HMR for renderer base on electron-vite cli.
-  // Load the remote URL for development or the local html file for production.
-  if (is.dev && process.env['ELECTRON_RENDERER_URL']) {
-    mainWindow.loadURL(process.env['ELECTRON_RENDERER_URL'])
-  } else {
-    mainWindow.loadFile(join(__dirname, '../renderer/index.html'))
+  if (isNetworkError) {
+    // Send error to renderer to show a toast notification
+    // This is "elegant" and non-blocking
+    eventBus.sendToRenderer(NOTIFICATION_EVENTS.SHOW_ERROR, SendTarget.ALL_WINDOWS, {
+      id: Date.now().toString(),
+      title: 'Network Error',
+      message: msg,
+      type: 'error'
+    })
   }
-}
-
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
-app.whenReady().then(() => {
-  // Set app user model id for windows
-  electronApp.setAppUserModelId('com.electron')
-
-  // Default open or close DevTools by F12 in development
-  // and ignore CommandOrControl + R in production.
-  // see https://github.com/alex8088/electron-toolkit/tree/master/packages/utils
-  app.on('browser-window-created', (_, window) => {
-    optimizer.watchWindowShortcuts(window)
-  })
-
-  // IPC test
-  ipcMain.on('ping', () => console.log('pong'))
-
-  createWindow()
-
-  app.on('activate', function () {
-    // On macOS it's common to re-create a window in the app when the
-    // dock icon is clicked and there are no other windows open.
-    if (BrowserWindow.getAllWindows().length === 0) createWindow()
-  })
 })
 
-// Quit when all windows are closed, except on macOS. There, it's common
-// for applications and their menu bar to stay active until the user quits
-// explicitly with Cmd + Q.
+process.on('unhandledRejection', (reason) => {
+  log.error('Unhandled Rejection:', reason)
+})
+
+// Set application command line arguments
+app.commandLine.appendSwitch('autoplay-policy', 'no-user-gesture-required') // Allow video autoplay
+app.commandLine.appendSwitch('webrtc-max-cpu-consumption-percentage', '100') // Set WebRTC max CPU usage
+app.commandLine.appendSwitch('js-flags', '--max-old-space-size=4096') // Set V8 heap memory size
+app.commandLine.appendSwitch('ignore-certificate-errors') // Ignore certificate errors (for dev or specific scenarios)
+
+// Set platform-specific command line arguments
+if (process.platform == 'win32') {
+  // Windows platform specific parameters (currently commented out)
+  // app.commandLine.appendSwitch('in-process-gpu')
+  // app.commandLine.appendSwitch('wm-window-animations-disabled')
+}
+if (process.platform === 'darwin') {
+  // macOS platform specific parameters
+  app.commandLine.appendSwitch('disable-features', 'DesktopCaptureMacV2,IOSurfaceCapturer')
+}
+
+// Initialize lifecycle manager and register core hooks
+const lifecycleManager = new LifecycleManager()
+registerCoreHooks(lifecycleManager)
+
+// Initialize presenter after ready
+let presenter: Presenter
+
+// Start the lifecycle management system instead of using app.whenReady()
+app.whenReady().then(async () => {
+  // Set app user model id for windows
+  electronApp.setAppUserModelId('com.1Chen1y1111.deepchat')
+
+  try {
+    console.log('main: Application lifecycle startup')
+    await lifecycleManager.start()
+    presenter = getInstance(lifecycleManager)
+    console.log('main: Application lifecycle startup completed successfully')
+  } catch (error) {
+    console.error('main: Application lifecycle startup failed:', error)
+    dialog.showErrorBox(
+      'Application startup failed',
+      error instanceof Error ? error.message : String(error)
+    )
+    app.quit() // Serious error, exit the program
+  }
+})
+
+// Handle window-all-closed event
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit()
+  if (!presenter) return
+
+  // Check if there are any non-floating-button windows
+  const mainWindows = presenter.windowPresenter.getAllWindows()
+
+  if (mainWindows.length === 0) {
+    // When only floating button windows exist, quit app on non-macOS platforms
+    console.log('main: All main windows closed, requesting shutdown')
+    app.quit() // Keep this event to avoid unexpected situations
   }
 })
 

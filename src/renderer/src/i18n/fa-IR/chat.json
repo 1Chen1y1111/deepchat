@@ -1,0 +1,165 @@
+{
+  "input": {
+    "placeholder": "چیزی بپرسید؟ می‌توانید با {'@'} به ابزارها، پرونده‌ها، منابع ارجاع دهید...",
+    "fileArea": "ناحیه پرونده",
+    "inputArea": "ناحیه ورودی",
+    "functionSwitch": "کلید کارکرد",
+    "fileSelect": "انتخاب فایل",
+    "pasteFiles": "چسباندن فایل‌ها از بریده‌دان",
+    "dropFiles": "پرونده‌ها را اینجا رها کنید",
+    "promptFilesAdded": "پرونده‌ها افزوده شد",
+    "promptFilesAddedDesc": "{count} پرونده با موفقیت افزوده شد",
+    "promptFilesError": "خطا در پردازش پرونده",
+    "promptFilesErrorDesc": "پردازش {count} پرونده ناموفق بود",
+    "historyPlaceholder": "(برای تکمیل، Tab را فشار دهید)",
+    "rateLimitQueue": "صف {count}",
+    "rateLimitWait": "انتظار {seconds}ث",
+    "rateLimitQueueTooltip": "{count} درخواست در صف، فاصله {interval} ثانیه",
+    "rateLimitReadyTooltip": "آماده ارسال، فاصله {interval} ثانیه",
+    "rateLimitWaitingTooltip": "باید {seconds} ثانیه دیگر منتظر بمانید، فاصله {interval} ثانیه",
+    "acpWorkdir": "دایرکتوری کاری ACP",
+    "acpWorkdirTooltip": "تنظیم دایرکتوری کاری ACP",
+    "acpWorkdirSelect": "یک پوشه برای استفاده به عنوان دایرکتوری کاری ACP انتخاب کنید",
+    "acpWorkdirCurrent": "دایرکتوری جاری: {path}",
+    "acpMode": "حالت",
+    "acpModeTooltip": "حالت فعلی: {mode}",
+    "agentWorkspaceCurrent": "فهرست کاری فعلی: {path}",
+    "agentWorkspaceSelect": "پوشه کاری را انتخاب کنید",
+    "agentWorkspaceTooltip": "دایرکتوری کاری عامل را تنظیم کنید"
+  },
+  "features": {
+    "webSearch": "جستجوی وب",
+    "artifactThinking": "تفکر مصنوعی",
+    "thoughtForSeconds": "تفکر به مدت {seconds} ثانیه",
+    "thoughtForSecondsLoading": "در حال تفکر ({seconds} ثانیه)",
+    "modeChanged": "تغییر حالت به: {mode}"
+  },
+  "search": {
+    "results": "{0} صفحه وب یافت شد",
+    "searching": "در حال جستجو...",
+    "title": "یافته‌های جستجو",
+    "description": "{0} نتیجه مرتبط یافت شد",
+    "optimizing": "در حال بهینه‌سازی عبارت جستجو...",
+    "reading": "در حال جستجو و خواندن صفحات وب...",
+    "error": "جستجو ناموفق بود"
+  },
+  "messages": {
+    "thinking": "در حال تفکر...",
+    "rateLimitWaiting": "محدودیت نرخ درخواست، در صف انتظار...",
+    "rateLimitTitle": "محدودیت نرخ درخواست",
+    "rateLimitQueue": "موقعیت صف",
+    "rateLimitEstimated": "زمان تخمینی انتظار",
+    "rateLimitQuickSettings": "تنظیم محدودیت",
+    "rateLimitSwitchProvider": "تغییر ارائه‌دهنده",
+    "rateLimitImmediately": "فوری",
+    "rateLimitSeconds": "ثانیه",
+    "rateLimitMinutes": "دقیقه"
+  },
+  "rateLimit": {
+    "queueTooltip": "{count} درخواست در صف، فاصله {interval} ثانیه",
+    "readyTooltip": "آماده ارسال، فاصله {interval} ثانیه",
+    "waitingTooltip": "باید {seconds} ثانیه دیگر منتظر بمانید، فاصله {interval} ثانیه"
+  },
+  "notify": {
+    "generationComplete": "ساخت تکمیل شد",
+    "generationError": "ساخت ناموفق بود"
+  },
+  "navigation": {
+    "title": "ناوبری پیام‌ها",
+    "searchPlaceholder": "جستجوی پیام‌ها...",
+    "noResults": "پیام منطبق پیدا نشد",
+    "noMessages": "هنوز پیامی وجود ندارد",
+    "totalMessages": "مجموع {count} پیام",
+    "searchResults": "{count} نتیجه از {total} پیام پیدا شد",
+    "userMessage": "پیام کاربر",
+    "assistantMessage": "پاسخ دستیار",
+    "unknownMessage": "پیام ناشناخته"
+  },
+  "toolCall": {
+    "title": "فراخوانی ابزار",
+    "calling": "فراخوانی ابزار در حال انجام است",
+    "response": "پاسخ ابزار",
+    "end": "فراخوانی ابزار پایان یافت",
+    "error": "خطای فراخوانی ابزار",
+    "clickToView": "برای مشاهده جزئیات کلیک کنید",
+    "functionName": "نام تابع",
+    "params": "پارامترها",
+    "responseData": "داده‌های پاسخ"
+  },
+  "mcpUi": {
+    "badge": "UI",
+    "collapse": "بستن",
+    "expand": "گسترش دهید",
+    "title": "MCP UI"
+  },
+  "acp": {
+    "workspace": {
+      "title": "فضای کاری",
+      "collapse": "بستن",
+      "plan": {
+        "section": "برنامه",
+        "empty": "هنوز وظیفه‌ای وجود ندارد",
+        "status": {
+          "pending": "در انتظار",
+          "in_progress": "در حال انجام",
+          "completed": "تکمیل شده",
+          "failed": "ناموفق",
+          "skipped": "رد شده"
+        }
+      },
+      "files": {
+        "section": "فایل‌ها",
+        "empty": "فایلی وجود ندارد",
+        "loading": "در حال بارگذاری فایل‌ها...",
+        "contextMenu": {
+          "insertPath": "در جعبه ورودی وارد کنید",
+          "openFile": "باز کردن فایل",
+          "revealInFolder": "در فایل منیجر باز کنید"
+        }
+      },
+      "terminal": {
+        "section": "ترمینال",
+        "empty": "خروجی وجود ندارد"
+      }
+    }
+  },
+  "mode": {
+    "acpAgent": "نماینده ACP",
+    "agent": "عامل",
+    "chat": "چت کردن",
+    "current": "حالت فعلی: {mode}"
+  },
+  "workspace": {
+    "collapse": "بستن",
+    "files": {
+      "contextMenu": {
+        "insertPath": "در جعبه ورودی وارد کنید",
+        "openFile": "باز کردن فایل",
+        "revealInFolder": "در فایل منیجر باز کنید"
+      },
+      "empty": "هنوز فایلی وجود ندارد",
+      "loading": "در حال بارگیری فایل ها...",
+      "section": "سند"
+    },
+    "browser": {
+      "section": "مرورگر",
+      "empty": "هیچ برگه‌ای نیست"
+    },
+    "plan": {
+      "empty": "هنوز هیچ تکلیفی وجود ندارد",
+      "section": "برنامه ریزی کنید",
+      "status": {
+        "completed": "تکمیل شد",
+        "failed": "شکست بخورد",
+        "in_progress": "در حال انجام است",
+        "pending": "در انتظار",
+        "skipped": "پرش کرد"
+      }
+    },
+    "terminal": {
+      "empty": "هنوز خروجی وجود ندارد",
+      "section": "ترمینال"
+    },
+    "title": "فضای کار"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "steps": {
+    "welcome": {
+      "title": "Welcome",
+      "description": "Let's start setting up DeepChat"
+    },
+    "provider": {
+      "title": "Provider",
+      "description": "Choose your preferred model provider"
+    },
+    "configuration": {
+      "title": "Configuration",
+      "description": "Configure the models you want to use"
+    },
+    "complete": {
+      "title": "Complete",
+      "description": "All set and ready to go!"
+    }
+  },
+  "title": "Welcome to DeepChat",
+  "description": "Let's walk you through the setup.",
+  "provider": {
+    "select": "Select a Provider",
+    "apiUrl": "API URL",
+    "apiKey": "API Key",
+    "verifyLink": "Verify Link"
+  },
+  "complete": {
+    "title": "All Done!",
+    "description": "You're all set. Let's get started!"
+  },
+  "buttons": {
+    "getStarted": "Get Started",
+    "next": "Next",
+    "back": "Back"
+  }
+}
